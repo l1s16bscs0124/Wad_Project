@@ -1,0 +1,7 @@
+input[id="password"]:invalid {
+    background-color: #ff7260;
+}
+
+input[type="email"]:invalid {
+    background-color: #ffe23b;
+}
