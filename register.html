@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+	<title>Food Diaries</title>
+    <link rel="stylesheet" href="css/style.css">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Food Diaries">
+  <meta name="keywords" content="Pizza, Burger, Sandwiches,  Home delievery">
+  <meta name="author" content="Sheharyar, Ali, usman, awais">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>Food Diaries</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  <meta name="keywords" content="Pizza, Burger, Sandwiches,  Home delievery">
+  <meta name="author" content="Sheharyar, Ali, usman, awais">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+</head>
+<body background="images\za.jpg">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <a href="#"><img src="images/LOGO.jpg" alt="logo" width="160" height="75"></a> 
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>Home</a>
+      <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> About</a>
+      
+      <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> Login</a>
+      
+      <a href="register.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Register</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contact</a>
+	        <a href="signup.html" class="w3-bar-item w3-button"><i class="fa fa-certificate "></i> SignUP</a>
+
+	  
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="images\2.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header><hr>
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+<section id ="hassan"  background="images\za.jpg">
+    <div class="container">
+        <h3>Sign Up </h3>
+        <form name="registerForm" onsubmit="validateForm();return false" novalidate>
+            <div class="form-row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" name="firstName"
+                               id="firstName" placeholder="First Name" required>
+                        <div id="firstNameMsg" class="alert alert-danger d-none">
+                            Please fill your first name
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control"
+                               id="lastName" placeholder="Last Name" required>
+                        <div id="lastNameMsg" class="alert alert-danger d-none">
+                            Please fill your last name
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                       class="form-control" id="email" placeholder="Email" required>
+                <div id="emailMsg" class="alert alert-danger d-none">
+                    Please fill your valid email address
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text"
+                       title="Six or more characters with 1 special character"
+                       class="form-control" id="password" placeholder="Password"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9-]+\.[a-z]{2,3}$">
+                       <!--pattern="\s*;\s*">-->
+                       <!--pattern="((?=.*\d)(?=.*[!@#$%]).{6,12})">-->
+                       <!--pattern="e+?(le)"> Matches any string that is followed by a specific string n-->
+                       <!--pattern="^(033)[a-z]+"> Matches any string with n at the beginning of it-->
+
+                       <!--pattern="[a-z]+\d$"> Matches any string with n at the end of it-->
+                       <!--pattern="[a-z]*[^abc]"> Find any character NOT between the brackets-->
+                       <!--pattern="\d{3}"> any digit with length 3 only-->
+                       <!--pattern="\d{1,5}"> any digit with length 1 till 5-->
+                       <!--pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}">
+                        mm/dd/yyyy-->
+                       <!--pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                Must contain at least one number and one uppercase and
+                lowercase letter, and at least 8 or more characters-->
+                       <!--pattern=".{6,}">Six or more characters-->
+                       <!--pattern="(xy?)">Matches any string that contains zero or one occurrences of n-->
+                       <!--pattern="(x*|y*)">Matches any string that contains zero or more occurrences of n-->
+                       <!--pattern="(x|y)+">Matches any string that contains at least one n-->
+                       <!--pattern="(x|y)">Find any of the alternatives separated with |-->
+                       <!--pattern="[0-9]">Find any of the digits between the brackets-->
+                       <!--pattern="[abc]">Find any of the characters between the brackets-->
+                       <!--pattern="[A-Za-z]{3}">-->
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block my-3">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/myScript.js"></script>
+</body>
+</html>
